@@ -1,3 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+h2 {
+    padding: 10px;
+}
+
+header {
+    background-color: #242629;
+    padding: 16px 0;
+}
+
+header .container {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header a {
+    color:whitesmoke;
+}
+
+.container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+article {
+    padding: 10px;
+}
+
+section {
+    padding: 16px 0;
+}
+
+img {
+    box-shadow: 2px 2px 5px #242629;
+}
+
+#esportes {
+    background-color: whitesmoke;
+}
+
+#esportes article h3, #esportes h2 {
+    color: green;
+}
+
+#economia {
+    background-color: ivory;
+}
+
+#economia article h3, #economia h2 {
+    color: darkgoldenrod;
+}
+
+#entreterimento {
+    background-color: lavender;
+}
+
+#entreterimento article h3, #entreterimento h2 {
+    color: indigo;
+}
+
+#tecnologia {
+    background-color: lightgray;
+}
+
+#tecnologia article h3, #tecnologia h2 {
+    color: darkslategray;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .artigos > article {
-    
+    width: 33.3%;
+}
+
+.artigos > article > h3, p {
+    width: 450px;
 }
