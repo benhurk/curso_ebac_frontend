@@ -1,78 +1,41 @@
 * {
     box-sizing: border-box;
-}
-
-h1 {
-    color: whitesmoke;
-}
-
-h2 {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #242629;
+    background-color: #2f3640;
     padding: 16px 0;
+    color: whitesmoke;
 }
 
 header .container {
-    width: auto;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-header a {
-    color:whitesmoke;
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+header li  a {
+    color: skyblue;
+    text-decoration: none;
 }
 
 .container {
-    width: fit-content;
+    width: 1366px;
     margin: 0 auto;
 }
 
-article {
-    padding: 10px;
-}
-
-section {
-    padding: 16px 0;
-}
-
-img {
-    box-shadow: 2px 2px 5px #242629;
-}
-
-#esportes {
-    background-color: whitesmoke;
-}
-
-#esportes article h3, #esportes h2 {
-    color: green;
-}
-
-#economia {
-    background-color: ivory;
-}
-
-#economia article h3, #economia h2 {
-    color: darkgoldenrod;
-}
-
-#entreterimento {
-    background-color: lavender;
-}
-
-#entreterimento article h3, #entreterimento h2 {
-    color: indigo;
-}
-
-#tecnologia {
-    background-color: lightgray;
-}
-
-#tecnologia article h3, #tecnologia h2 {
-    color: darkslategray;
+.container section h2, .artigos{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .artigos {
@@ -81,10 +44,80 @@ img {
     justify-content: space-between;
 }
 
-.artigos > article {
-    width: 33.3%;
+.artigos article {
+    width: 30%;
 }
 
-.artigos > article > h3, p {
-    width: 450px;
+.artigos img {
+    height: 60%;
+    width: 100%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, .artigos article {
+    margin-bottom: 16px;
+}
+
+.artigos article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.artigos article a {
+    color: whitesmoke;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.artigos article a:hover {
+    text-decoration: underline;
+}
+
+.artigos article p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artigos article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports a {
+    background-color: green;
+}
+
+#economy {
+    background-color: wheat;
+}
+
+#economy a {
+    background-color: orange;
+}
+
+#entertainment {
+    background-color: skyblue;
+}
+
+#entertainment a {
+    background-color: darkblue;
+}
+
+#tech {
+    background-color: lightgrey;
+}
+
+#tech a {
+    background-color: darkslategray;
 }
