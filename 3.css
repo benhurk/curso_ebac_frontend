@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 16px 0;
+}
+
+.container {
+    margin-left: 16px;
+}
+
+form input {
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 250px;
+    background-color: aliceblue;
+}
+
+form input::placeholder {
+    text-align: left;
+}
+
+form button {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: SteelBlue;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.success_message {
+    display: none;
+    background-color: MediumSeaGreen;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.error_message {
+    display: none;
+    background-color: Crimson;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 8px;
+}
