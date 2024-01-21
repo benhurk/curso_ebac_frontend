@@ -3,149 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar-se</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="magnific-popup.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Formulário bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>Criar conta</h1>
+            <h1 class="text-center">Cadastrar-se</h1>
         </div>
     </header>
-
     <main>
         <div class="container">
-            <form>
-                <div>
-                    <div class="form-camp">
-                        <strong>*</strong><label for="name">Nome completo:</label> <br>
-                        <input type="text" id="name" name="name" placeholder="Seu nome">
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <label class="form-label" for="name">Nome:</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bi bi-person-fill"></span>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Seu Nome">
+                        </div>
 
-                    <div class="form-camp">
-                        <strong>*</strong><label for="cpf">CPF:</label> <br>
-                        <input type="text" id="cpf" name="cpf">
-                    </div>
-                </div>
+                        <label class="form-label" for="email">E-Mail:</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bi bi-envelope-at-fill"></span>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="exemplo@exemplo">
+                        </div>
 
-                <div>
-                    <div class="form-camp">
-                        <strong>*</strong><label for="password">Senha:</label> <br>
-                        <input type="password" id="password" name="password" placeholder="********">
-                    </div>
+                        <label class="form-label" for="tel">Telefone:</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bi-telephone-fill"></span>
+                            <input class="form-control" type="tel" id="tel" name="tel">
+                        </div>
 
-                    <div class="form-camp">
-                        <strong>*</strong><label for="passwordConfirm">Confirmar senha:</label> <br>
-                        <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="********">
-                    </div>
-                </div>
+                        <div class="mb-3 form-check">
+                            <label class="form-check-label" for="terms">Li e aceito os <a href="#" data-bs-toggle="modal" data-bs-target="#terms-modal">termos de uso</a>.</label>
+                            <input class="form-check-input" type="checkbox" id="terms" name="terms">
+                        </div>
+                        
+                        <button class="btn btn-success text-center" type="submit">Cadastrar</button>
+                    </form>
 
-                <div>
-                    <div class="form-camp">
-                        <strong>*</strong><label for="email">E-mail:</label> <br>
-                        <input type="email" id="email" name="email" placeholder="exemplo@exemplo">
-                    </div>
-
-                    <div class="form-camp">
-                        <label for="phone">Telefone:</label> <br>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                </div>
-
-                <div>
-                    <div class="form-camp">
-                        <strong>*</strong><label for="cep">CEP:</label> <br>
-                        <input type="text" id="cep" name="cep">
-                    </div>
-
-                    <div class="form-camp">
-                        <strong>*</strong><label for="address">Endereço:</label> <br>
-                        <input type="text" id="address" name="address" placeholder="Rua, bairro, número">
+                    <div class="modal fade" id="terms-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="modal-title">Termos de uso</h2>
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa neque, dolore eveniet optio exercitationem non et suscipit? Odio accusantium consectetur modi sit deleniti earum atque deserunt odit voluptate sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate officia vero quod molestiae? Modi rem totam nemo fugiat atque tenetur officiis odio corporis nesciunt, facilis qui doloremque repudiandae magnam.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="container">
-                    <div class="form-camp checkbox-camp">
-                        <input type="checkbox" id="termsCheckbox" name="termsCheckbox">
-                        <strong>*</strong><label for="termsCheckbox">Eu li e aceito os <a href="#terms-popup" class="popup-with-zoom-anim">termos de uso</a>.</label> <br>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <button type="submit">Cadastrar</button>
-                </div>
-            </form>
-        </div>
-
-        <div id="terms-popup" class="zoom-anim-dialog mfp-hide">
-            <h2>Termos de uso.</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum a repudiandae deserunt sed voluptates autem quia odio perspiciatis tenetur delectus aut, facere quaerat, aperiam, quos ullam enim quas rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda esse magnam dolores repellendus ipsa atque explicabo vel ipsam reprehenderit est eum eos laborum sed nemo, quaerat possimus consectetur magni optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum, beatae ipsa nam eligendi aliquid omnis molestiae animi dolore illo accusantium eveniet eius at corporis iure quo hic possimus quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum debitis consequatur, rem minus iusto corrupti ratione nulla molestias itaque vero est id, vel dolorem beatae inventore perspiciatis dignissimos facilis commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quis laudantium maxime labore, blanditiis quam quod. Explicabo tempora expedita sapiente temporibus eos harum, placeat repudiandae aspernatur voluptatibus. Sit, consequatur assumenda?</p>
-        </div>
-
-        <div class="container">
-            <i><strong>Nota:</strong> Os campos marcados com ' <strong>*</strong> ' são obrigatórios!</i>
+            </div>
         </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/messages_pt_BR.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#phone').mask('(00) 00000-0000', {placeholder: '(__) _____-_____'});
-            $('#cpf').mask('000.000.000-00', {placeholder: '___.___.___-__'});
-            $('#cep').mask('00000-000', {placeholder: '_____-___'});
-
-            $('.popup-with-zoom-anim').magnificPopup({
-                closeBtnInside: true,
-                
-                midClick: true,
-                mainClass: 'my-mfp-zoom-in'
-            });
-        })
-
-        $('form').validate({
-            rules: {
-                name: {required: true, minlength: 2},
-                email: {required: true, email: true},
-                password: {required: true, minlength: 8},
-                passwordConfirm: {required: true, equalTo: '#password'},
-                cpf: {required: true, minlength: 14},
-                cep: {required: true, minlength: 9},
-                address: {required: true},
-                termsCheckbox: {required: true}
-            },
-
-            messages: {
-                name: {required: 'Insira seu nome.', minlength: 'Nome inválido'},
-                email: {required: 'Insira um e-mail.', email: 'Este e-mail é inválido.'},
-                password: {required: 'Crie uma senha de pelo menos 8 dígitos.', minlength: 'Sua senha precisa de pelo menos 8 dígitos.'},
-                passwordConfirm: {required: 'Digite sua senha novamente.', equalTo: 'As senhas não são iguais.'},
-                termsCheckbox: {required: 'Você precisa concordar com os termos de uso para continuar.'},
-                cpf: {required: 'Insira o seu CPF.', minlength: 'CPF inválido'},
-                cep: {required: 'Insira o CEP da sua cidade.', minlength: 'CEP inválido'},
-                address: {required: 'Insira um endereço.'}
-            },
-
-            errorPlacement: function(error, element) {
-                if (element.is(":checkbox")) {
-                    error.appendTo(element.parents(".checkbox-camp"));
-                } else {
-                    error.insertAfter(element);
-                }
-            }
+            $('#tel').mask('(00) 00000-0000', {placeholder: '(__) _____-_____'});
         })
     </script>
 </body>
-
 </html>
