@@ -1,74 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário bootstrap</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 class="text-center">Cadastrar-se</h1>
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
+    <section>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form>
-                        <label class="form-label" for="name">Nome:</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text bi bi-person-fill"></span>
-                            <input class="form-control" type="text" id="name" name="name" placeholder="Seu Nome">
-                        </div>
-
-                        <label class="form-label" for="email">E-Mail:</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text bi bi-envelope-at-fill"></span>
-                            <input class="form-control" type="email" id="email" name="email" placeholder="exemplo@exemplo">
-                        </div>
-
-                        <label class="form-label" for="tel">Telefone:</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text bi-telephone-fill"></span>
-                            <input class="form-control" type="tel" id="tel" name="tel">
-                        </div>
-
-                        <div class="mb-3 form-check">
-                            <label class="form-check-label" for="terms">Li e aceito os <a href="#" data-bs-toggle="modal" data-bs-target="#terms-modal">termos de uso</a>.</label>
-                            <input class="form-check-input" type="checkbox" id="terms" name="terms">
-                        </div>
-                        
-                        <button class="btn btn-success text-center" type="submit">Cadastrar</button>
-                    </form>
-
-                    <div class="modal fade" id="terms-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title" id="modal-title">Termos de uso</h2>
-                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa neque, dolore eveniet optio exercitationem non et suscipit? Odio accusantium consectetur modi sit deleniti earum atque deserunt odit voluptate sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate officia vero quod molestiae? Modi rem totam nemo fugiat atque tenetur officiis odio corporis nesciunt, facilis qui doloremque repudiandae magnam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
         </div>
-    </main>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#tel').mask('(00) 00000-0000', {placeholder: '(__) _____-_____'});
-        })
-    </script>
+    </section>
 </body>
 </html>
