@@ -1,0 +1,43 @@
+//breakpoints
+@mobile: ~"(max-width: 767px)";
+@tablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+//maps
+#colors() {
+    bg: #f5f6fa;
+    c0: #fff;
+    c1: #182C61;
+    c2: #44bd32;
+    c2_light: lighten(#44bd32, 15%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @tablet {
+        max-width: 80%;
+    }
+
+    @media @mobile {
+        max-width: 70%;
+    }
+}
+
+header {
+    background-color: #colors[c1];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
