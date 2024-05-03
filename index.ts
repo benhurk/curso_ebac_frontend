@@ -1,7 +1,3 @@
-function multiplica(x: number, y:number) {
-    return x * y;
-}
+const multiplica = (x: number, y:number): number => x * y;
 
-function ola(name: string) {
-    return "Olá" + name;
-}
+const ola = (name:string): string => `Olá ${name}`;
